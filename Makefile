@@ -43,5 +43,4 @@ clean:
 	rm -f limine limine.exe
 
 limine: limine.c
-	@printf ">>> Building Limine\n"
-	@$(CC) $(CFLAGS) -std=c99 $(CPPFLAGS) $(LDFLAGS) $< $(LIBS) -o $@
+	$(CC) $(CFLAGS) -std=c99 $(CPPFLAGS) $(LDFLAGS) $< $(LIBS) -o $@
